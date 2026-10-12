@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Be Alert has moved</title>
+<meta name="robots" content="noindex" />
+<script>
+  // Be Alert moved to be-alert.github.io. Keep every old link working:
+  //   /smart-radar/<anything>  ->  https://be-alert.github.io/app/<anything>
+  //   /<anything else>         ->  https://be-alert.github.io/<anything else>
+  (function () {
+    var p = location.pathname, rest = location.search + location.hash;
+    var to = p.indexOf('/smart-radar') === 0
+      ? 'https://be-alert.github.io/app' + (p.slice('/smart-radar'.length) || '/')
+      : 'https://be-alert.github.io' + p;
+    location.replace(to + rest);
+  })();
+</script>
+<meta http-equiv="refresh" content="2; url=https://be-alert.github.io/" />
+<link rel="canonical" href="https://be-alert.github.io/" />
+<style>body{font:16px system-ui,sans-serif;background:#05070f;color:#fff;display:grid;place-items:center;min-height:100vh;margin:0}a{color:#2ee6c5}</style>
+</head>
+<body><p>Be Alert has moved to <a href="https://be-alert.github.io/">be-alert.github.io</a>…</p></body>
+</html>
